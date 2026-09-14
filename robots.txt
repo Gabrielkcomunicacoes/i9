@@ -1,0 +1,62 @@
+# i9 Volt — robots.txt
+# Site institucional legítimo de mobilidade elétrica (I9 MULTIMARCAS LTDA, CNPJ 42.879.621/0001-72).
+# Todos os buscadores e crawlers de IA estão liberados de propósito — o objetivo é aparecer
+# tanto em buscas tradicionais quanto em respostas geradas por IA (ChatGPT, Perplexity, Gemini, etc).
+
+User-agent: *
+Allow: /
+
+# Buscadores tradicionais
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawlers de IA / GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://i9volt.com.br/sitemap.xml
