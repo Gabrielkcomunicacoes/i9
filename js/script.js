@@ -5,12 +5,12 @@
 const WHATS_BASE = 'https://wa.me/5516996483246';
 
 /* ---------- Dados dos modelos ----------
-   Preço e specs completas confirmados publicamente apenas para o i9 M6.
-   Os demais modelos exibem "Consulte" até a loja informar valores —
-   ajuste os preços/specs abaixo assim que tiver os dados oficiais.
-   OBS: o arquivo de imagem enviado para o "triciclo" chama-se
-   MOTOS-I9QUADRICICLO.webp — troquei o nome do modelo para "i9 Quadriciclo"
-   para bater com o asset real. Confirme o nome oficial e ajuste se preciso. */
+   Preço e specs completas confirmados para: i9 M6, i9 Cloud, i9 T5, i9 Speed,
+   i9 Max, i9 Triciclo, IRun S15 e IRun S12.
+   Os demais modelos exibem "Consulte" até a loja informar valores oficiais.
+   OBS: o arquivo de imagem enviado para o "i9 Quadriciclo" chama-se
+   MOTOS-I9QUADRICICLO.webp — troquei o nome do modelo para bater com o asset
+   real. Confirme o nome oficial e ajuste se preciso. */
 const MODELS = [
   {
     name: 'i9 M6',
@@ -73,6 +73,55 @@ const MODELS = [
     price: 'Consulte',
     desc: 'Scooter inteligente com baú traseiro e design compacto — mobilidade ágil para todos os dias.',
     img: 'assets/MOTOS-I9SMARTWHEL1.webp'
+  },
+  {
+    name: 'i9 Cloud',
+    price: 'R$ 10.990',
+    desc: 'Robustez e potência para o dia a dia, com trava por NFC e alarme para mais segurança.',
+    specs: { 'Motor': '1000W', 'Bateria': 'Lítio 60V 20Ah', 'Vel. máx.': '32 km/h', 'Autonomia': 'até 60 km', 'Carga máx.': '200 kg', 'Segurança': 'NFC e alarme' },
+    img: 'assets/cloud.png'
+  },
+  {
+    name: 'i9 T5',
+    price: 'R$ 6.990',
+    desc: 'Opção de entrada com ótimo custo-benefício, ideal para o uso urbano do dia a dia.',
+    specs: { 'Motor': '800W', 'Bateria': 'Lítio 48V 20Ah', 'Vel. máx.': '32 km/h', 'Autonomia': 'até 60 km', 'Carga máx.': '180 kg', 'Segurança': 'NFC e alarme' },
+    img: 'assets/t5-1.png'
+  },
+  {
+    name: 'i9 Speed',
+    price: 'R$ 11.990',
+    desc: 'Mais autonomia e potência para quem roda bastante e não abre mão do desempenho.',
+    specs: { 'Motor': '1000W', 'Bateria': 'Lítio 72V 20Ah', 'Vel. máx.': '32 km/h', 'Autonomia': 'até 80 km', 'Carga máx.': '200 kg', 'Segurança': 'NFC e alarme' },
+    img: 'assets/speed.png'
+  },
+  {
+    name: 'i9 Max',
+    price: 'R$ 10.990',
+    desc: 'Desempenho robusto com grande autonomia, no equilíbrio ideal entre preço e potência.',
+    specs: { 'Motor': '1000W', 'Bateria': 'Lítio 72V 20Ah', 'Vel. máx.': '32 km/h', 'Autonomia': 'até 80 km', 'Carga máx.': '200 kg', 'Segurança': 'NFC e alarme' },
+    img: 'assets/max.png'
+  },
+  {
+    name: 'i9 Triciclo',
+    price: 'R$ 11.490',
+    desc: 'Estabilidade extra com três rodas — mais segurança e conforto para o dia a dia.',
+    specs: { 'Motor': '1000W', 'Bateria': 'Lítio 60V 30Ah', 'Vel. máx.': '32 km/h', 'Autonomia': 'até 50 km', 'Carga máx.': '200 kg', 'Segurança': 'NFC e alarme' },
+    img: 'assets/tricicolo.png'
+  },
+  {
+    name: 'IRun S15',
+    price: 'R$ 11.590',
+    desc: 'Bateria removível de alta capacidade e grande torque para quem exige o máximo de autonomia.',
+    specs: { 'Motor': '1000W', 'Bateria': 'Lítio 64V 30Ah, removível', 'Vel. máx.': '32 km/h', 'Autonomia': 'até 90 km', 'Torque': '135 N·m', 'Recarga': '4–6 horas', 'Carga máx.': '180 kg' },
+    img: 'assets/iruns15.png'
+  },
+  {
+    name: 'IRun S12',
+    price: 'R$ 10.590',
+    desc: 'Torque forte e bateria removível, com ótimo custo-benefício para o uso diário.',
+    specs: { 'Motor': '1000W', 'Bateria': 'Lítio 60V 25Ah, removível', 'Vel. máx.': '32 km/h', 'Autonomia': 'até 80 km', 'Torque': '125 N·m', 'Recarga': '4–6 horas', 'Carga máx.': 'até 200 kg' },
+    img: 'assets/iruns12.png'
   }
 ];
 
