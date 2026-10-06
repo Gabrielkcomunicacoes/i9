@@ -557,3 +557,129 @@ address{font-style:normal;}
   .footer-grid{grid-template-columns:1fr;}
   .logo-img{height:36px;}
 }
+
+/* Hero em HTML (só aparece no mobile) */
+.hero-mobile{display:none;}
+
+@media (max-width:1100px){
+  .header-inner{gap:16px;}
+  .main-nav{gap:14px;}
+  .main-nav a{font-size:13px;}
+  .header-cta{padding:9px 14px; font-size:13px;}
+}
+
+/* ==========================================================
+   Mobile refinements
+   ========================================================== */
+@media (max-width:760px){
+  .container{padding:0 18px;}
+  .header-inner{height:64px; gap:12px;}
+  .logo-img{height:34px;}
+
+  /* Menu */
+  .main-nav{
+    top:64px;
+    max-height:calc(100dvh - 64px);
+    overflow-y:auto;
+    gap:0;
+    padding:8px 18px 20px;
+    background:rgba(6,12,31,.98);
+    backdrop-filter:blur(12px);
+    box-shadow:0 24px 40px rgba(0,0,0,.5);
+    visibility:hidden;
+    transition:transform .25s ease, opacity .25s ease, visibility 0s linear .25s;
+  }
+  .main-nav.open{visibility:visible; transition-delay:0s;}
+  .main-nav a{
+    font-size:16px;
+    padding:15px 2px;
+    border-bottom:1px solid var(--line);
+  }
+  .main-nav a:last-child{border-bottom:none;}
+  .main-nav a::after{display:none;}
+  .nav-toggle{padding:10px; margin-right:-10px;}
+  .nav-toggle span{transition:transform .25s ease, opacity .2s ease;}
+  .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* Hero: banner maior (recorte nas motos) + texto e botões reais em HTML */
+  .hero{background:radial-gradient(120% 80% at 50% 0%, var(--navy-600), var(--navy-900));}
+  .hero-slides{aspect-ratio:auto;}
+  .hero-img{
+    height:auto;
+    aspect-ratio:16/11;
+    max-height:440px;
+    object-position:88% center;
+    -webkit-mask-image:linear-gradient(180deg,#000 62%,transparent);
+            mask-image:linear-gradient(180deg,#000 62%,transparent);
+  }
+  .hero-hotspot{display:none;}
+  .scroll-cue{display:none;}
+  .hero-mobile{
+    display:block;
+    position:relative;
+    z-index:2;
+    margin-top:-44px;
+    padding:0 18px 60px;
+    text-align:center;
+  }
+  .hero-mobile h2{
+    font-size:clamp(28px,8.6vw,40px);
+    line-height:1.08;
+    margin-bottom:12px;
+  }
+  .hero-mobile h2 span{color:var(--blue-500);}
+  .hero-mobile p{
+    font-size:15px;
+    line-height:1.55;
+    color:var(--gray-300);
+    max-width:460px;
+    margin:0 auto 22px;
+  }
+  .hero-mobile-actions{display:flex; gap:10px; max-width:460px; margin:0 auto;}
+  .hero-mobile-actions .btn{flex:1; justify-content:center; padding:14px 10px; font-size:14.5px; white-space:normal; text-align:center;}
+  .hero-dots{bottom:22px;}
+  .hero-dots button{width:8px; height:8px;}
+
+  /* Seções */
+  .intro{padding:40px 18px 4px;}
+  .beneficios, .assistencia, .test-ride{padding:52px 0;}
+  .modelos, .faq, .sobre{padding:56px 0;}
+  .cta-final{padding:56px 0;}
+  .cards-grid{gap:14px; margin-top:26px;}
+  .card{padding:22px 18px;}
+  .section-sub{margin-bottom:28px; font-size:15px;}
+  .modelos-grid{gap:18px;}
+  .model-media{aspect-ratio:4/3;}
+  .model-body{padding:18px 18px 20px;}
+  .model-cta{padding:6px 0;}
+
+  .test-ride-inner, .sobre-inner{gap:26px;}
+  .test-ride-text, .sobre-text{flex-basis:100%;}
+  .test-ride-visual, .sobre-media{flex-basis:100%;}
+  .test-ride-text .btn, .cta-final .btn{width:100%; justify-content:center;}
+  .hero-actions.center{flex-direction:column;}
+  .hero-actions .btn{justify-content:center; white-space:normal; text-align:center;}
+
+  .accordion-trigger{padding:16px 18px; font-size:14.5px; text-align:left; gap:8px;}
+  .accordion-panel{padding:0 18px;}
+  .accordion-item.open .accordion-panel{max-height:520px;}
+
+  /* Rodapé */
+  .site-footer{padding-top:44px;}
+  .footer-grid{gap:26px;}
+  .footer-disclaimer, .footer-bottom{padding-left:18px; padding-right:18px;}
+
+  /* WhatsApp flutuante */
+  .whatsapp-float{
+    width:54px; height:54px;
+    right:16px;
+    bottom:calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (max-width:380px){
+  .hero-mobile-actions{flex-direction:column;}
+  .model-specs{grid-template-columns:1fr;}
+}
