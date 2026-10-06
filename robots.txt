@@ -1,5 +1,5 @@
 # i9 Volt — robots.txt
-# Site institucional legítimo de mobilidade elétrica (I9 MULTIMARCAS LTDA, CNPJ 42.879.621/0001-72).
+# Site institucional legítimo de mobilidade elétrica (I9 MULTIMARCAS LTDA, CNPJ 42.879.631/0001-72).
 # Todos os buscadores e crawlers de IA estão liberados de propósito — o objetivo é aparecer
 # tanto em buscas tradicionais quanto em respostas geradas por IA (ChatGPT, Perplexity, Gemini, etc).
 
